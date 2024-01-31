@@ -1,0 +1,9 @@
+type Programs @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  description: String!
+  image: String!
+  day: String!
+  time: String!
+}
+ 
