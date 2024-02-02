@@ -32,18 +32,22 @@ export default function HeroLayout1(props) {
     },
     {
       overrides: {
-        Eyebrow: { color: "rgba(115,212,209,1)", children: "Full-stack" },
-        Heading: { color: "rgba(255,255,255,1)" },
-        Body: { color: "rgba(255,255,255,1)" },
+        Eyebrow: { fontSize: "24px", color: "rgba(249,190,193,1)" },
+        Heading: { color: "rgba(249,190,193,1)" },
+        Body: {
+          fontSize: "20px",
+          color: "rgba(249,190,193,1)",
+          letterSpacing: "0.05px",
+        },
         Message: {},
-        Button: {},
+        Button: { backgroundColor: "rgba(249,190,193,1)" },
         HeroMessage: {},
-        Left: { backgroundColor: "rgba(13,26,38,1)" },
-        image: { width: "unset", alignSelf: "stretch" },
+        Left: { backgroundColor: "rgba(17,146,142,1)" },
+        image: {},
         Right: {},
         HeroLayout1: {},
       },
-      variantValues: { mode: "Dark" },
+      variantValues: { mode: "Mode2" },
     },
   ];
   const overrides = mergeVariantsAndOverrides(
@@ -109,7 +113,7 @@ export default function HeroLayout1(props) {
             {...getOverrideProps(overrides, "Message")}
           >
             <Text
-              fontFamily="Inter"
+              fontFamily="Catamaran"
               fontSize="16px"
               fontWeight="700"
               color="rgba(21,183,177,1)"
@@ -127,11 +131,11 @@ export default function HeroLayout1(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Full stack"
+              children="Glowfit By Carly"
               {...getOverrideProps(overrides, "Eyebrow")}
             ></Text>
             <Text
-              fontFamily="Inter"
+              fontFamily="Catamaran"
               fontSize="24px"
               fontWeight="600"
               color="rgba(13,26,38,1)"
@@ -149,11 +153,11 @@ export default function HeroLayout1(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Build full-stack web and mobile apps in hours. Easy to start, easy to scale"
+              children="Be Happy Be Strong Be Healthy"
               {...getOverrideProps(overrides, "Heading")}
             ></Text>
             <Text
-              fontFamily="Inter"
+              fontFamily="Catamaran"
               fontSize="16px"
               fontWeight="400"
               color="rgba(48,64,80,1)"
@@ -172,7 +176,7 @@ export default function HeroLayout1(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="AWS Amplify is a complete solution that lets frontend web and mobile developers easily build, ship, and host full-stack applications on AWS, with the flexibility to leverage the breadth of AWS services as use cases evolve. No cloud expertise needed."
+              children="Introducing Glowfit by Carly, your personal trainer focused on postpartum fitness for women. Carly is passionate about helping new moms achieve a healthy and radiant lifestyle. With her expertise in personalized training plans, she will guide you on your fitness journey to regain strength and confidence after pregnancy. "
               {...getOverrideProps(overrides, "Body")}
             ></Text>
           </Flex>
